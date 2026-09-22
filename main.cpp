@@ -14,7 +14,7 @@ int main() {
   int age = 0;
   int credits = 0;
   double gpa = 0.0;
-  int credits_left = CREDITS_REQ - credits;
+  
 
   std::cout << "Please enter your info. \n";
   std::cout << "First name: ";    std::cin >> first;
@@ -22,13 +22,13 @@ int main() {
   std::cout << "Age: ";            std::cin >> age;
   std::cout << "Credits for your current term: ";        std::cin >> credits;
   std::cout << "GPA: ";                                   std::cin >> gpa;
-
+  int credits_left = CREDITS_REQ - credits;
 
 
   std::cout << "-Student Information- \n";
    std::cout << "Name: " << first << " "<< last << "\n";
    std::cout << "Age: " << age << "\n";
-   std::cout << "Credits: " << credits << "\n";
+   std::cout << "Term Credits: " << credits << "\n";
    std::cout << "GPA: " << gpa << "\n";
    std::cout << "Credits until graduation: " << credits_left << "\n";
  
